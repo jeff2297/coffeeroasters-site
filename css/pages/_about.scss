@@ -1,0 +1,224 @@
+.about-hero {
+    background: url('../assets/about/mobile/image-hero-whitecup.jpg');
+    background-size: cover;
+    padding: 111px 24px 87px;
+    margin-bottom: 120px;
+    border-radius: 10px;
+    text-align: center;
+    color: $light-cream;
+
+    @include mq(tablet) {
+        background: url('../assets/about/tablet/image-hero-whitecup.jpg');
+        background-size: cover;
+        text-align: left;
+        padding: 118px 58px;
+    }
+
+    @include mq(desktop) {
+        background: url('../assets/about/desktop/image-hero-whitecup.jpg');
+        background-size: cover;
+        padding: 137px 85px;
+
+    }
+
+    h2 {
+        color: $light-cream;
+        margin-bottom: 24px;
+    }
+
+    p {
+        opacity: 0.8;
+        @include mq(tablet) {
+            max-width: 398px;
+        }
+    }
+}
+
+.about-content-commitment {
+    text-align: center;
+    margin-bottom: 198px;
+    
+    @include mq(tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 304px;
+    }
+
+    @include mq(desktop) {
+        justify-content: space-around;
+        margin-bottom: 256px;
+    }
+
+    .about-content-img {
+        background: url('../assets/about/mobile/image-commitment.jpg');
+        background-size: cover;
+        height: 400px;
+        border-radius: 10px;
+        margin-bottom: 48px;
+
+        @include mq(tablet) {
+            width: 40%;
+            height: 470px;
+            margin-bottom: 0;
+        }
+
+        @include mq(desktop) {
+            background: url('../assets/about/desktop/image-commitment.jpg');
+            background-size: cover;
+            height: 520px;
+            width: 34%;
+        }
+    }
+
+    .about-content-details {
+        @include mq(tablet) {
+            text-align: left;
+            width: 50%;
+        }
+
+        @include mq(desktop) {
+            width: 45%;
+            max-width: 540px;
+        }
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+
+        @include mq(desktop) {
+            margin-bottom: 32px;
+        }
+    }
+
+    p {
+        color: $dark-gray;
+        opacity: 0.8;
+    }
+}
+
+.about-content-quality {
+    background: $footer-background;
+    border-radius: 10px;
+    padding: 142px 24px 61px;
+    text-align: center;
+    position: relative;
+
+    @include mq(tablet) {
+        padding: 224px 74px 67px;
+    }
+
+    @include mq(desktop) {
+        padding: 88px 85px 176px;
+        text-align: left;
+    }
+
+    h2 {
+        color: $light-cream;
+        margin-bottom: 24px;
+
+        @include mq(tablet) {
+            font-size: 32px;
+        }
+        @include mq(desktop) {
+            font-size: 40px;
+            margin-bottom: 32px;
+        }
+    }
+
+    p {
+        color: $light-cream;
+        opacity: 0.8;
+        @include mq(desktop) {
+            max-width: 540px;
+        }
+    }
+
+    &-image {
+        background: url('../assets/about/mobile/image-quality.jpg');
+        background-size: cover;
+        background-position: top;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 156px;
+        transform: translateY(-50%);
+
+        @include mq(tablet) {
+            background: url('../assets/about/tablet/image-quality.jpg');
+            background-size: cover;
+            height: 320px;
+        }
+        @include mq(desktop) {
+            background: url('../assets/about/desktop/image-quality.jpg');
+            background-size: cover;
+            height: 474px;
+            width: 35%;
+            transform: translateY(-18%);
+            right: 85px;
+            left: 0;
+            margin-right: 0;
+        }
+
+    }
+}
+
+.locations {
+    margin-top: 120px;
+    text-align: center;
+    @include mq(tablet) {
+        text-align: left;
+    }
+    @include mq(desktop) {
+        margin-top: 168px;
+    }
+
+    h4 {
+        color: $light-gray;
+        margin-bottom: 72px;
+    }
+
+    .location-card-container {
+        @include mq(tablet) {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 144px;
+        }
+        @include mq(desktop) {
+            margin-bottom: 168px;
+        }
+    }
+
+    .location-card {
+        margin-bottom: 80px;
+        @include mq(tablet) {
+            width: 33%;
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 47px;
+        }
+
+        h2 {
+            margin-bottom: 22px;
+            @include mq(tablet) {
+                font-size: 24px;
+            }
+            @include mq(desktop) {
+                font-size: 32px;
+            }
+        }
+
+        p {
+            color: $dark-gray;
+            font-size: 16px;
+        }
+    }
+}

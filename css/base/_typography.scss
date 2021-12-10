@@ -1,0 +1,54 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: $fw-black;
+  color: $dark-gray;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1;
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desktop) {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: 28px;
+
+  @include mq(tablet) {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  line-height: 1.125;
+  font-size: 28px;
+
+  @include mq(desktop) {
+    font-size: 32px;
+  }
+}
+
+h4 {
+    line-height: 1.185;
+    font-size: 24px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 26px;
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+
+}
